@@ -2,11 +2,8 @@ import sys
 
 N = int(sys.stdin.readline())
 
-numbers = []
-for i in range(N):
-    number = N = int(sys.stdin.readline())
-    numbers.append(number)
+numbers = [int(sys.stdin.readline()) for _ in range(N)]
 
 numbers.sort()
-for i in numbers:
-    print(i)
+for number in numbers:
+    print(number)
