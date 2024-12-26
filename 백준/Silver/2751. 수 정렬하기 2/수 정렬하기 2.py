@@ -5,5 +5,4 @@ N = int(sys.stdin.readline())
 numbers = [int(sys.stdin.readline()) for _ in range(N)]
 
 numbers.sort()
-for number in numbers:
-    print(number)
+print("\n".join(map(str, numbers)))
