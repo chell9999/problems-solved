@@ -14,10 +14,8 @@ def solution(numbers):
 
     str_numbers.sort(key=cmp_to_key(compare))
 
-    # 4. 정렬된 배열을 이어붙이기
     answer = ''.join(str_numbers)
 
-    # 5. 모든 숫자가 0인 경우 처리 (ex. [0, 0, 0] -> "0")
     if answer[0] == '0':
         answer = '0'
 
